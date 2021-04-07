@@ -5,32 +5,25 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Valclass Framework | TEST 1</title>
+   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
-<body class="component text-transform background-color font text-color active tlrb position decoration padding border margin width-height">
-
-   <!-- class valclass - test -->
-
-   <h2 style="margin-top: 100px;" class="v-text-uppercase v-mt-4">text transform</h2>
-
-   <h1 class="v-font-montserrat v-text-warning v-weight-bold v-pb-3 v-relative v-l-4 v-mt-4 v-border-b-2 v-w-max">VALCLASS</h1>
-
+<body class="component display grid font background-color focus">
 
    <!-- navbar - test -->
-
-   <div class="v-navbar">
-      <div class="v-logo">
-         <h3>Valclass</h3>
+   <div class="v-navbar v-secondary v-font-poppins">
+      <div class="v-brand">
+         <h3 >Valclass</h3>
       </div>
-
-      <ul>
-         <li><a href="#">home</a></li>
-         <li><a href="#">pricing</a></li>
-         <li><a href="#">product</a></li>
-         <li><a href="#">service</a></li>
-         <li><a href="#">gallery</a></li>
+      
+      <ul>				  
+         <li><a href="#">home</a></li>							  				  
+         <li><a href="#">pricing</a></li>							  				  
+         <li><a href="#">product</a></li>							  				  
+         <li><a href="#">service</a></li>							  				  
+         <li><a href="#">gallery</a></li>							  				  
       </ul>
-
+   
       <div class="v-btn-toggle">
          <input type="checkbox">
          <span></span>
@@ -39,89 +32,84 @@
       </div>
    </div>
 
-
-   <!-- alert - test -->
-
-   <!-- <div class="v-alert-primary v-font-poppins">
-      <h3> A simple primary alert—check it out!</h3>
+   <div class="v-d-grid v-rows-2 v-font-poppins">
+      <div style="background-color: aqua;padding: 20px;">
+          <h1>Hi, My name is Muhammad Khoirul Hudadsdsds</h1>
+      </div>
+      <div>
+         <h1>Hi, My name is Muhammad Khoirul Huda</h1>
+      </div>
    </div>
 
-   <div class="v-alert-green v-font-poppins">
-      <h3> A simple primary alert—check it out!</h3>
-   </div> -->
+	<button class="v-btn v-btn-modal">Click to see modal</button>
 
-
-   <!-- button - test -->
-
-   <button class="v-btn-primary">default</button>
-   <button class="v-btn-danger">default</button>
-   <button class="v-btn-warning">default</button>
-   <button class="v-btn-dark">default</button>
-   <button class="v-btn-smooth">default</button>
-   <button class="v-btn-light">default</button>
-   <button class="v-btn v-btn-modal">default</button>
-
-
-   <!-- table - test -->
-
-   <table class="v-table-striped">
-
-      <thead>
-         <th>#</th>
-         <th>Name</th>
-         <th>Last</th>
-         <th>Handle</th>
-      </thead>
-
-      <tbody>
-         <tr>
-            <td>1</td>
-            <td>Jakarta</td>
-            <td>08562136x</td>
-            <td>anton@email.com</td>
-         </tr>
-         <tr>
-            <td>2</td>
-            <td>Surabaya</td>
-            <td>08581234x</td>
-            <td>bryan@email.com</td>
-         </tr>
-         <tr>
-            <td>3</td>
-            <td>Semarang</td>
-            <td>08121234x</td>
-            <td>cherly@email.com</td>
-         </tr>
-         <tr>
-            <td>4</td>
-            <td>Makassar</td>
-            <td>08111234x</td>
-            <td>dean@email.com</td>
-         </tr>
-      </tbody>
-
-
-      <!-- modal test -->
-
-      <div class="v-modal-green modal v-font-poppins">
-         <div class="v-modal-content">
-            <div class="v-modal-head">
-               <h2>v-modal</h2>
-               <span class="v-close"></span>
-            </div>
-            <div class="v-modal-body">
-               <!-- content -->
-            </div>
+   <div class="v-modal-primary modal v-font-poppins">
+      <div class="v-modal-content">
+         <div class="v-modal-head">
+            <h2>v-modal</h2>
+            <span class="v-close"></span>
+         </div>
+         <div class="v-modal-body">
+            <form>
+               <input type="text" class="v-focus-border">
+            </form>
          </div>
       </div>
+   </div>
 
-   </table>
-
+   <div class="v-card v-font-poppins" style="width: 280px;">
+      <div class="v-card-images">
+          <img src="./revolt-164_6wVEHfI-unsplash.jpg" alt="...">
+      </div>
+      <div class="v-card-content">
+          <h2>example card simple</h2>
+          <p>valclass is a framework best features component.</p>
+      </div>
+   </div>
 
    <!-- kode js agar terhubung dengan valclass secara lokal / sementara / versi download -->
-   <script src="https://cdn.jsdelivr.net/gh/valclassdevelop/valclassDocumentation/index.js"></script>
    <!-- <script src="./index.js"></script> -->
-   <script></script>
+   <div id="google_translate_element"></div>
+<!-- 
+   <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'id', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+      </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+      
+   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+   <script src="./valclass.js"></script>
+   <script src="./property/DOMmodal.js"></script>
+   <script>
+      	if (document.querySelector('.modals')) {
+
+         document.querySelector('.v-modal-content').classList.add('hiddenModal')
+         document.querySelector('.modals').classList.add('hiddenSModals')
+
+         if (document.querySelector('.v-close')) {
+         document.querySelector('.v-close').innerHTML = '<img class="v-times-icon-xgHs76" src="./times-solid.svg">'
+         }
+
+         if(document.querySelector('.v-close')) {
+         document.querySelector('.v-close').addEventListener('click', () => {
+         document.querySelector('.v-modal-content').classList.add('hiddenModal')
+         document.querySelector('.v-modal-content').classList.remove('showModal-6gsdz')
+         setTimeout(() => {
+            document.querySelector('.modals').classList.add('hiddenSModals')
+            document.querySelector('.modals').classList.remove('showSModals')
+         }, 300)
+         })
+         }
+
+         document.querySelector('.v-btn-modal').addEventListener('click', () => {
+         document.querySelector('.v-modal-content').classList.add('showModal-6gsdz')
+         document.querySelector('.v-modal-content').classList.remove('hiddenModal')
+         document.querySelector('.modals').classList.add('showSModals')
+         document.querySelector('.modals').classList.remove('hiddenSModals')
+         })
+         }
+   </script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
-// agar dibuatkan sebuat style di tag head secara otomatis ketika pertama kali browser di load
+// agar dibuatkan sebuat style di tag head secara otomatis ketika browser di load
+// to make a style in the head tag automatically when the browser is loaded
 
 if (document.querySelector('body')) {
     let css = document.createElement('style');
@@ -18,8 +19,12 @@ if (document.querySelector('body')) {
     document.getElementsByTagName("head")[0].appendChild(css);
 }
 
+//============================//==============================//
 
 // Memanggil file property sesuai nama kelas yang tertera pada tag body
+// #developerValclass - Muhammad Khoirul Huda -> developervalclass@gmail.com
+
+// Call the property file according to the class name listed in the body tag
 // #developerValclass - Muhammad Khoirul Huda -> developervalclass@gmail.com
 
 
@@ -656,5 +661,28 @@ if(document.querySelector("body").classList.contains("zoom")) {
     body.appendChild(script)
 }
 
+if(document.querySelector("body").classList.contains("media")) {
+    js = "./property/media.js";
+
+    script = document.createElement("script")
+    body = document.getElementsByTagName("body")[0]
+    script.src = js
+    body.appendChild(script)
+}
+
+if(document.querySelector("body").classList.contains("load")) {
+    js = "./property/load.js";
+
+    script = document.createElement("script")
+    body = document.getElementsByTagName("body")[0]
+    script.src = js
+    body.appendChild(script)
+}
+
+//============================//==============================//
+
 // akhir dari pengkondisian untuk pemanggilan file property
+// #developerValclass - Muhammad Khoirul Huda -> developervalclass@gmail.com
+
+// end of the conditions for calling the file property
 // #developerValclass - Muhammad Khoirul Huda -> developervalclass@gmail.com
